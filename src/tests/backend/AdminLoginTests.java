@@ -18,7 +18,7 @@ public class AdminLoginTests {
 	}
 	
 	@Test
-	public void succesfulLogin(){
+	public void successfulLogin(){
 		AdminLogin.goTo();
 		AdminLogin.login(Username.ADMIN, Password.ADMINPASSWORD);
 
@@ -26,7 +26,7 @@ public class AdminLoginTests {
 	}
 	
 	@Test
-	public void unsuccesfulLogin() {
+	public void unsuccessfulLogin() {
 		AdminLogin.goTo();
 		AdminLogin.login(Username.BULLSHITUSER, Password.BULLSHITPASSWORD);
 		
@@ -39,4 +39,3 @@ public class AdminLoginTests {
 	}
 	
 }
-;

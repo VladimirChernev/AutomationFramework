@@ -15,16 +15,16 @@ public class AdminLogin {
 	}
 
 	/**
-	 * This method tries to log you in the ADmin Login Panel with the
+	 * This method tries to log you in the Admin Login Panel with the
 	 * provided by you parameters. It clicks "LOGIN" instead of you doing it in 
 	 * another method.
 	 * 
 	 * @author Strahinski
-	 * @see http://documentation.com
+	 * @see "http://www.documentation.com"
 	 * @since 1985
 	 * 
  	 * @param username the username that should be used when trying to login
-	 * @param password the password that shoul dbe used when trying to login
+	 * @param password the password that should dbe used when trying to login
 	 */
 	public static void login(Username username, Password password) {
 		WebElement usernameField = Browser.driver.findElement(By.name("username"));
