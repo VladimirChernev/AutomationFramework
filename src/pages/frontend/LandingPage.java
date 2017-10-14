@@ -13,7 +13,6 @@ public class LandingPage {
         Browser.driver.get("https://www.rakuten.de/");
     }
 
-
     public static void productSearch(ProductName productName) {
         WebElement usernameField = Browser.driver.findElement(By.id("q"));
         usernameField.sendKeys(productName.getProductName());

@@ -13,7 +13,7 @@ public class AutoComplete {
         for(WebElement option : optionsToSelect){
             System.out.println(option);
             if(option.getText().equals(productName.getProductName())) {
-                System.out.println("Trying to select: "+productName.getProductName());
+                System.out.println("Trying to select: " + productName.getProductName());
                 option.click();
                 break;
             }

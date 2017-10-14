@@ -1,6 +1,8 @@
 package pages.enums;
 
 public enum Username {
+
+	/* To Do
 	ADMIN("admin"),
 	GUESTUSER("milen"),
 	TEACHERUSER("milentheteacher"),
@@ -15,6 +17,7 @@ public enum Username {
 	public String getUsername() {
 		return username;
 	}
+	*/
 	
 	
 }
