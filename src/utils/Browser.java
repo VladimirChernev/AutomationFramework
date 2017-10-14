@@ -1,8 +1,8 @@
 package utils;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Browser {
@@ -11,9 +11,10 @@ public class Browser {
 
 	public static void init() {
 
-		// geckodriver-v0.19.0-win64.zip
-		System.setProperty("webdriver.gecko.driver", "C:/Zip/Docs/Work/Java Dev Course/geckodriver.exe");
-		driver = new FirefoxDriver();
+		// chromedriver 2.33 win x32
+		System.setProperty("webdriver.chrome.driver", "C:/Zip/Docs/Work/Java Dev Course/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
@@ -25,4 +26,14 @@ public class Browser {
 		driver.close();
 	}
 
+	/* Implementation from Metala
+	static synchronized public void buildDriver() {
+		SeleniumWebDriver.setWebDriver();
+		SeleniumWebDriver.getWebDriver().get(envUrl);
+		SeleniumWebDriver.getWebDriver().manage().window().maximize();
+		SeleniumWebDriver.getWebDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		SeleniumWebDriver.getWebDriver().manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+		SeleniumWebDriver.getWebDriver().manage().deleteAllCookies();
+	}
+	*/
 }

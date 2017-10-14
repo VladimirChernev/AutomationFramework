@@ -2,7 +2,6 @@ package pages.enums;
 
 public enum Password {
 
-	/* To Do
 	ADMINPASSWORD("parola"),
 	GUESTPASSWORD("asdfasdfsadf"),
 	TEACHERPASSWORD("asdfsdafsadfadsf"),
@@ -17,5 +16,5 @@ public enum Password {
 	public String getPassword() {
 		return password;
 	}
-	*/
+
 }
