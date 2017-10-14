@@ -1,13 +1,20 @@
 package pages.frontend;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import pages.enums.ProductLink;
-import utils.Browser;
+import static utils.Browser.driver;
 
 public class SearchResultsPage {
 
-    public static void clickOnProduct(ProductLink productLink) {
-        Browser.driver.findElement(By.xpath("//a[@href ='" + productLink.getProductLink() + "']")).click();
+    //get all elements from the page:
+    private static WebElement getProductLink(ProductLink productLink) {
+        return driver.findElement(By.xpath("//a[@href ='" + productLink.getProductLink() + "']"));
+    }
+
+    //Actions on the page:
+    public static void clickOnProductLink(ProductLink productLink) {
+        getProductLink(productLink).click();
     }
 
 }

@@ -35,7 +35,7 @@ public class CheckoutPage2 {
     private static WebElement getTitleSelect(String index) {
         return driver.findElement(By.xpath("//*[@class='field-container gender-container'] //li //*[@index = '"+index+"']"));
     }
-    //Data
+    //Date
     private static WebElement getDataDD() {
         return driver.findElement(By.xpath("//*[@id='invoice-day-container'] //a"));
     }

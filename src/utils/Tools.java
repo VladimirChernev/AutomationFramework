@@ -11,7 +11,7 @@ public class Tools extends Browser{
         }
     }
 
-    public boolean verifyTextPresent(final String text) {
+    public boolean verifyPageTitle(final String text) {
         boolean isPresent = false;
         int br=0;
         while (!isPresent&&br<=15) {

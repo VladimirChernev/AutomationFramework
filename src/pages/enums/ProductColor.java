@@ -2,7 +2,8 @@ package pages.enums;
 
 public enum ProductColor {
 
-    CORALBLUE("Coral Blue");
+    CORALBLUE("Coral Blue"),
+    ORCHIDGRAY("Orchid Gray");
 
     private String productColor;
 

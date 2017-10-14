@@ -1,11 +1,11 @@
 package pages.frontend;
 
 import org.openqa.selenium.By;
-
 import static utils.Browser.driver;
 
 public class CheckoutPage1 {
 
+    //Actions on the page:
     public static void selectCheckoutAsGuest() {
         driver.findElement(By.id("login-method1")).click();
     }
