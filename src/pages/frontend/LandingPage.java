@@ -16,6 +16,9 @@ public class LandingPage {
     private static WebElement getSearchBtn() {
         return driver.findElement(By.xpath("//*[@class='b-btn-search tr_header_search_icon']"));
     }
+    private static WebElement getLoginBtn() {
+        return driver.findElement(By.xpath("//*[@class='tr_header_login']"));
+    }
 
     //Actions on the page:
     public static void goTo(EnvironmentURL environmentURL) {
@@ -30,5 +33,10 @@ public class LandingPage {
     public static void clickSearchButton() {
         getSearchBtn().click();
     }
+
+    public static void clickLoginBtn() {
+        getLoginBtn().click();
+    }
+
 
 }

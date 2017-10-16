@@ -1,0 +1,9 @@
+
+1. succesful login: Landing page > Login Page, use correct Email and Pass > CustomerAccountOverviewPage, use log out button
+2. wrong email & password: Landing Page > Login Page, use wrong Email and Pass > error message (that does not reveal the username exists)
+3. wrong password: Landing Page > Login Page, use wrong Email and Pass > error message
+4. password reset: read e-mail for code - go to reset link, verify rest code is correct, fill in new password, Success Message
+5. password reset: read e-mail for code - go to reset link, verify rest code is correct, fill in new password, passwords not identical
+6. password reset: use old code for reset attempt
+passwrod reset - bug? - user can use the same 'old' password for the new password
+

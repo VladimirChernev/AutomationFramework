@@ -2,22 +2,18 @@ package pages.enums;
 
 public enum Username {
 
-	/* To Do
-	ADMIN("admin"),
-	GUESTUSER("milen"),
-	TEACHERUSER("milentheteacher"),
-	BULLSHITUSER("sdlkjfasdlfkjads");
-	
+    VALIDEMAIL("Dark_Angel_hXc@abv.bg"),
+	WRONGEMAIL("Somebody@Example.com"),
+	ADMIN("admin");
+
 	private String username;
 	
-	private Username(String username){
+	Username(String username){
 		this.username = username;
 	}
 
 	public String getUsername() {
 		return username;
 	}
-	*/
-	
-	
+
 }

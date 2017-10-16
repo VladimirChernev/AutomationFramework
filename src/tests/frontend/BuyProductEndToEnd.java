@@ -25,6 +25,7 @@ public class BuyProductEndToEnd {
         Address validGermanAddress = new Address();
         validGermanAddress.generateAddress();
 
+        //scenario steps
         LandingPage.goTo(EnvironmentURL.LIVE);
         LandingPage.productSearch(ProductName.SAMSUNGGALAXYS8);
         SearchResultsPage.clickOnProductLink(ProductLink.SAMSUNGGALAXYS8);
@@ -37,6 +38,7 @@ public class BuyProductEndToEnd {
         CheckoutPage2.fillPersonData(validGermanAddress);
         CheckoutPage2.clickGoToCheckoutPage3();
         CheckoutPage3.verifyPageTitle("Rakuten.de Checkout");
+        CheckoutPage3.verifyPageText("Wie möchten Sie bezahlen?"); //"How would you like to pay?"
     }
 
     @After

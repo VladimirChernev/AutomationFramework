@@ -2,10 +2,9 @@ package pages.enums;
 
 public enum Password {
 
-	ADMINPASSWORD("parola"),
-	GUESTPASSWORD("asdfasdfsadf"),
-	TEACHERPASSWORD("asdfsdafsadfadsf"),
-	BULLSHITPASSWORD("sdafsadfasdf");
+	VALIDPASSWORD("123456ytrewq"),
+    WRONGPASSWORD("12tonight465"),
+	ADMINPASSWORD("Password");
 	
 	private String password;
 	
