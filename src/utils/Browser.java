@@ -26,7 +26,7 @@ public class Browser {
 		driver.close();
 	}
 
-	/* Implementation from Metala
+	/* Future Improvements
 	static synchronized public void buildDriver() {
 		SeleniumWebDriver.setWebDriver();
 		SeleniumWebDriver.getWebDriver().get(envUrl);
